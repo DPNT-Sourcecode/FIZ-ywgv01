@@ -16,27 +16,38 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void fizzBuzz_multiply_three_or_three_in_it() {
-        assertThat(fizzBuzz.fizzBuzz(33), equalTo("fizz"));
+    public void fizzBuzz_multiply_three() {
+        assertThat(fizzBuzz.fizzBuzz(18), equalTo("fizz"));
     }
     @Test
-    public void fizzBuzz_multiply_three_or_three_not_in_it() {
-        assertThat(fizzBuzz.fizzBuzz(27), equalTo("27"));
+    public void fizzBuzz_three_in_it() {
+        assertThat(fizzBuzz.fizzBuzz(13), equalTo("fizz"));
+    }
+
+    @Test
+    public void fizzBuzz_multiply_five() {
+        assertThat(fizzBuzz.fizzBuzz(40), equalTo("buzz"));
+    }
+    @Test
+    public void fizzBuzz_five_in_it() {
+        assertThat(fizzBuzz.fizzBuzz(52), equalTo("buzz"));
     }
 
     @Test
-    public void fizzBuzz_multiply_five_or_five_in_it() {
-        assertThat(fizzBuzz.fizzBuzz(55), equalTo("buzz"));
+    public void fizzBuzz_multiply_both() {
+        assertThat(fizzBuzz.fizzBuzz(90), equalTo("fizz buzz"));
     }
     @Test
-    public void fizzBuzz_multiply_five_or_five_not_in_it() {
-        assertThat(fizzBuzz.fizzBuzz(10), equalTo("10"));
+    public void fizzBuzz_contains_both() {
+        assertThat(fizzBuzz.fizzBuzz(53), equalTo("fizz buzz"));
     }
-
-    
     @Test
-    public void fizzBuzz_multiply_three_five_both_include_numers() {
-        assertThat(fizzBuzz.fizzBuzz(135), equalTo("fizz buzz"));
+    public void fizzBuzz_multiply3_contains5() {
+        assertThat(fizzBuzz.fizzBuzz(252), equalTo("fizz buzz"));
+    }
+    @Test
+    public void fizzBuzz_multiply5_contains3() {
+        assertThat(fizzBuzz.fizzBuzz(305), equalTo("fizz buzz"));
     }
 
     @Test
@@ -44,3 +55,4 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzz.fizzBuzz(17), equalTo("17"));
     }
 }
+
