@@ -21,11 +21,19 @@ public class FizzBuzzSolutionTest {
     }
     @Test
     public void fizzBuzz_deluxe_multiply3() {
-        assertThat(fizzBuzz.fizzBuzz(33), equalTo("fizz deluxe"));
+        assertThat(fizzBuzz.fizzBuzz(222), equalTo("fizz deluxe"));
+    }
+    @Test
+    public void fizzBuzz_fake_deluxe_multiply3() {
+        assertThat(fizzBuzz.fizzBuzz(33), equalTo("fizz fake deluxe"));
     }
     @Test
     public void fizzBuzz_deluxe_multiply5() {
-        assertThat(fizzBuzz.fizzBuzz(55), equalTo("buzz deluxe"));
+
+    }
+    @Test
+    public void fizzBuzz_fake_deluxe_multiply5() {
+        assertThat(fizzBuzz.fizzBuzz(55), equalTo("buzz fake deluxe"));
     }
 
     
@@ -80,5 +88,6 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzz.fizzBuzz(17), equalTo("17"));
     }
 }
+
 
 
