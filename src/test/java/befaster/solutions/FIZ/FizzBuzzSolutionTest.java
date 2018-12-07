@@ -16,6 +16,23 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
+    public void fizzBuzz_deluxe() {
+        assertThat(fizzBuzz.fizzBuzz(44), equalTo("deluxe"));
+    }
+    @Test
+    public void fizzBuzz_deluxe_multiply3() {
+        assertThat(fizzBuzz.fizzBuzz(33), equalTo("deluxe"));
+    }
+    @Test
+    public void fizzBuzz_deluxe_multiply5() {
+        assertThat(fizzBuzz.fizzBuzz(55), equalTo("deluxe"));
+    }
+    @Test
+    public void fizzBuzz_deluxe_fizz_buzz() {
+        assertThat(fizzBuzz.fizzBuzz(555), equalTo("fizz buzz deluxe"));
+    }
+
+    @Test
     public void fizzBuzz_multiply_three() {
         assertThat(fizzBuzz.fizzBuzz(18), equalTo("fizz"));
     }
@@ -55,4 +72,5 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzz.fizzBuzz(17), equalTo("17"));
     }
 }
+
 
