@@ -15,6 +15,16 @@ public class FizzBuzzSolution {
     		) {
     		return "fizz buzz deluxe";
     	}
+    	else if ( fizzBuzzSolution.isDelux(number)
+    			&& (fizzBuzzSolution.isDivisible(number, 3) || fizzBuzzSolution.isContains(number, "3") )    			
+    			) {
+    		return "fizz deluxe";
+    	}
+    	else if ( fizzBuzzSolution.isDelux(number)
+    			&& (fizzBuzzSolution.isDivisible(number, 5) || fizzBuzzSolution.isContains(number, "5") )    			
+    			) {
+    		return "buzz deluxe";
+    	}
     	else if ( fizzBuzzSolution.isDelux(number) ) {
     		return "deluxe";
     	}
@@ -72,3 +82,4 @@ public class FizzBuzzSolution {
     }
 
 }
+
