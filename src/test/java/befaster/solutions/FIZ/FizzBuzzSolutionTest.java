@@ -29,7 +29,7 @@ public class FizzBuzzSolutionTest {
     }
     @Test
     public void fizzBuzz_deluxe_multiply5() {
-
+    	// There is NO buzz delux number.
     }
     @Test
     public void fizzBuzz_fake_deluxe_multiply5() {
@@ -88,6 +88,7 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzz.fizzBuzz(17), equalTo("17"));
     }
 }
+
 
 
 
