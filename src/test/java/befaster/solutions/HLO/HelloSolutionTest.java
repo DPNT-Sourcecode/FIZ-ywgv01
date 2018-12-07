@@ -1,5 +1,7 @@
 package befaster.solutions.HLO;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Before;
@@ -17,6 +19,10 @@ public class HelloSolutionTest {
     @Test
     public void test_hello() {
 
-        assertNotNull(hello.hello("Hello"));
+        assertNotNull(hello.hello("Mr. X"));
+        
+        assertThat(hello.hello("Mr. X"), equalTo("Hello, Mr. X!"));
+        
     }
 }
+
