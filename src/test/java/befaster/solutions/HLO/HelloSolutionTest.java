@@ -20,4 +20,3 @@ public class HelloSolutionTest {
         assertNotNull(hello.hello("Hello"));
     }
 }
-
