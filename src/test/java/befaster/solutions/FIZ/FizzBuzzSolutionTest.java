@@ -16,36 +16,27 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void fizzBuzz_deluxe() {
-        assertThat(fizzBuzz.fizzBuzz(44), equalTo("deluxe"));
+    public void fizzBuzz_deluxe_3() {
+        assertThat(fizzBuzz.fizzBuzz(36), equalTo("deluxe"));
     }
     @Test
-    public void fizzBuzz_deluxe_multiply3() {
-        assertThat(fizzBuzz.fizzBuzz(222), equalTo("fizz deluxe"));
+    public void fizzBuzz_deluxe_3_fake() {
+        assertThat(fizzBuzz.fizzBuzz(63), equalTo("fake deluxe"));
     }
     @Test
-    public void fizzBuzz_fake_deluxe_multiply3() {
-        assertThat(fizzBuzz.fizzBuzz(33), equalTo("fizz fake deluxe"));
+    public void fizzBuzz_deluxe_5() {
+        assertThat(fizzBuzz.fizzBuzz(50), equalTo("deluxe"));
     }
     @Test
-    public void fizzBuzz_deluxe_multiply5() {
-    	// There is NO buzz delux number.
-    }
-    @Test
-    public void fizzBuzz_fake_deluxe_multiply5() {
-        assertThat(fizzBuzz.fizzBuzz(55), equalTo("buzz fake deluxe"));
+    public void fizzBuzz_deluxe_5_fake() {
+        assertThat(fizzBuzz.fizzBuzz(85), equalTo("fake deluxe"));
     }
 
     
-    @Test
-    public void fizzBuzz_fake_deluxe() {
-        assertThat(fizzBuzz.fizzBuzz(77), equalTo("fake deluxe"));
-    }
-    @Test
-    public void fizzBuzz_fake_deluxe_fizz_buzz() {
-        assertThat(fizzBuzz.fizzBuzz(555), equalTo("fizz buzz fake deluxe"));
-    }
-
+    
+    
+    
+    
     
     
     @Test
@@ -88,3 +79,4 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzz.fizzBuzz(17), equalTo("17"));
     }
 }
+
