@@ -21,11 +21,11 @@ public class FizzBuzzSolutionTest {
     }
     @Test
     public void fizzBuzz_deluxe_multiply3() {
-        assertThat(fizzBuzz.fizzBuzz(33), equalTo("deluxe"));
+        assertThat(fizzBuzz.fizzBuzz(33), equalTo("fizz deluxe"));
     }
     @Test
     public void fizzBuzz_deluxe_multiply5() {
-        assertThat(fizzBuzz.fizzBuzz(55), equalTo("deluxe"));
+        assertThat(fizzBuzz.fizzBuzz(55), equalTo("buzz deluxe"));
     }
     @Test
     public void fizzBuzz_deluxe_fizz_buzz() {
@@ -72,3 +72,4 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzz.fizzBuzz(17), equalTo("17"));
     }
 }
+
