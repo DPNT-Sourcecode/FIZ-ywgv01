@@ -19,8 +19,10 @@ public class FizzBuzzSolution {
     		else if (fizzBuzzSolution.isFakeDelux(number)){
         		return "fizz buzz fake deluxe";
     		}
+    		
     	}
-    	else if ( (fizzBuzzSolution.isDivisible(number, 3) || fizzBuzzSolution.isContains(number, "3") ) ) {
+    	
+    	if ( (fizzBuzzSolution.isDivisible(number, 3) || fizzBuzzSolution.isContains(number, "3") ) ) {
 
     		if (fizzBuzzSolution.isDelux(number)) {
         		return "fizz deluxe";
@@ -30,7 +32,8 @@ public class FizzBuzzSolution {
     		}
 
     	}
-    	else if (  (fizzBuzzSolution.isDivisible(number, 5) || fizzBuzzSolution.isContains(number, "5") ) ) {
+    	
+    	if (  (fizzBuzzSolution.isDivisible(number, 5) || fizzBuzzSolution.isContains(number, "5") ) ) {
 
     		if (fizzBuzzSolution.isDelux(number)) {
         		return "buzz deluxe";
@@ -40,21 +43,26 @@ public class FizzBuzzSolution {
     		}
 
     	}
-    	else if ( fizzBuzzSolution.isDelux(number) ) {
+    	
+    	if ( fizzBuzzSolution.isDelux(number) ) {
     		return "deluxe";
     	}
-    	else if ( fizzBuzzSolution.isFakeDelux(number) ) {
+    	
+    	if ( fizzBuzzSolution.isFakeDelux(number) ) {
     		return "fake deluxe";
     	}
-    	else if ( (fizzBuzzSolution.isDivisible(number, 3) || fizzBuzzSolution.isContains(number, "3") )
+    	
+    	if ( (fizzBuzzSolution.isDivisible(number, 3) || fizzBuzzSolution.isContains(number, "3") )
     			&& (fizzBuzzSolution.isDivisible(number, 5) || fizzBuzzSolution.isContains(number, "5") )
     		) {
     		return "fizz buzz";
     	}
-    	else if (fizzBuzzSolution.isDivisible(number, 3) || fizzBuzzSolution.isContains(number, "3")) {
+    	
+    	if (fizzBuzzSolution.isDivisible(number, 3) || fizzBuzzSolution.isContains(number, "3")) {
     		return "fizz";
     	}
-    	else if (fizzBuzzSolution.isDivisible(number, 5) || fizzBuzzSolution.isContains(number, "5")) {
+    	
+    	if (fizzBuzzSolution.isDivisible(number, 5) || fizzBuzzSolution.isContains(number, "5")) {
     		return "buzz";
     	}
 
@@ -125,6 +133,7 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
 
 
