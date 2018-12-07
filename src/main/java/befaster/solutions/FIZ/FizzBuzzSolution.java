@@ -15,6 +15,9 @@ public class FizzBuzzSolution {
     		) {
     		return "fizz buzz deluxe";
     	}
+    	else if ( fizzBuzzSolution.isDelux(number) ) {
+    		return "deluxe";
+    	}
     	else if ( (fizzBuzzSolution.isDivisible(number, 3) || fizzBuzzSolution.isContains(number, "3") )
     			&& (fizzBuzzSolution.isDivisible(number, 5) || fizzBuzzSolution.isContains(number, "5") )
     		) {
@@ -69,5 +72,3 @@ public class FizzBuzzSolution {
     }
 
 }
-
-
