@@ -1,8 +1,5 @@
 package befaster.solutions.FIZ;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
@@ -71,49 +68,41 @@ public class FizzBuzzSolution {
     }
     
     private boolean isDelux(Integer number) {
-    	
-    	Map<String, String> numbersMap = new HashMap<String, String>();
-    	
-    	if (number <= 10)
-    		return false;
-    	
+
     	String inputNumber = number.toString();
     	
-    	for(int i=0 ; i<inputNumber.length() ; i++) {
-    		numbersMap.put(inputNumber.charAt(i) + "", inputNumber.charAt(i) + "");
-    	}
-    	
-    	if (numbersMap.keySet().size() == 1) {
+    	if (
+    			( number % 3 == 0 && inputNumber.contains("3") )
+    			||( number % 5 == 0 && inputNumber.contains("5") )
+    		) {
+    		
     		if (number % 2 == 0)
     			return true;
     		else
     			return false;
+    		
     	}
-    	else 
-    		return false;
+		else
+			return false;
     }
     
     private boolean isFakeDelux(Integer number) {
-    	
-    	Map<String, String> numbersMap = new HashMap<String, String>();
-    	
-    	if (number <= 10)
-    		return false;
-    	
+
     	String inputNumber = number.toString();
     	
-    	for(int i=0 ; i<inputNumber.length() ; i++) {
-    		numbersMap.put(inputNumber.charAt(i) + "", inputNumber.charAt(i) + "");
-    	}
-    	
-    	if (numbersMap.keySet().size() == 1) {
+    	if (
+    			( number % 3 == 0 && inputNumber.contains("3") )
+    			||( number % 5 == 0 && inputNumber.contains("5") )
+    		) {
+    		
     		if (number % 2 != 0)
     			return true;
     		else
     			return false;
+    		
     	}
-    	else 
-    		return false;
+		else
+			return false;
     }
     
     private boolean isDivisible(Integer number, Integer dividend) {
@@ -133,3 +122,4 @@ public class FizzBuzzSolution {
     }
 
 }
+
