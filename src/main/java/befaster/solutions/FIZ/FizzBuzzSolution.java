@@ -57,10 +57,37 @@ public class FizzBuzzSolution {
     		numbersMap.put(inputNumber.charAt(i) + "", inputNumber.charAt(i) + "");
     	}
     	
-    	if (numbersMap.keySet().size() > 1)
-    		return false;
+    	if (numbersMap.keySet().size() == 1) {
+    		if (number % 2 == 0)
+    			return true;
+    		else
+    			return false;
+    	}
     	else 
-    		return true;
+    		return false;
+    }
+    
+    private boolean isFakeDelux(Integer number) {
+    	
+    	Map<String, String> numbersMap = new HashMap<String, String>();
+    	
+    	if (number <= 10)
+    		return false;
+    	
+    	String inputNumber = number.toString();
+    	
+    	for(int i=0 ; i<inputNumber.length() ; i++) {
+    		numbersMap.put(inputNumber.charAt(i) + "", inputNumber.charAt(i) + "");
+    	}
+    	
+    	if (numbersMap.keySet().size() == 1) {
+    		if (number % 2 != 0)
+    			return true;
+    		else
+    			return false;
+    	}
+    	else 
+    		return false;
     }
     
     
@@ -82,4 +109,3 @@ public class FizzBuzzSolution {
     }
 
 }
-
