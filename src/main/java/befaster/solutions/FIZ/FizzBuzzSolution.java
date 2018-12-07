@@ -43,6 +43,9 @@ public class FizzBuzzSolution {
     	else if ( fizzBuzzSolution.isDelux(number) ) {
     		return "deluxe";
     	}
+    	else if ( fizzBuzzSolution.isFakeDelux(number) ) {
+    		return "fake deluxe";
+    	}
     	else if ( (fizzBuzzSolution.isDivisible(number, 3) || fizzBuzzSolution.isContains(number, "3") )
     			&& (fizzBuzzSolution.isDivisible(number, 5) || fizzBuzzSolution.isContains(number, "5") )
     		) {
@@ -54,9 +57,9 @@ public class FizzBuzzSolution {
     	else if (fizzBuzzSolution.isDivisible(number, 5) || fizzBuzzSolution.isContains(number, "5")) {
     		return "buzz";
     	}
-    	else {
-    		return Integer.toString(number);
-    	}
+
+   		return Integer.toString(number);
+
     }
     
     private boolean isDelux(Integer number) {
@@ -122,5 +125,6 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
 
