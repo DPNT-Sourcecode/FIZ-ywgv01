@@ -42,12 +42,6 @@ public class FizzBuzzSolutionTest {
     }
 
     
-    
-    
-    
-    
-    
-    
     @Test
     public void fizzBuzz_multiply_three() {
         assertThat(fizzBuzz.fizzBuzz(18), equalTo("fizz"));
@@ -78,16 +72,13 @@ public class FizzBuzzSolutionTest {
     public void fizzBuzz_multiply3_contains5() {
         assertThat(fizzBuzz.fizzBuzz(252), equalTo("fizz buzz"));
     }
-    @Test
-    public void fizzBuzz_multiply5_contains3() {
-        assertThat(fizzBuzz.fizzBuzz(305), equalTo("fizz buzz"));
-    }
 
     @Test
     public void fizzBuzz_otherwise() {
         assertThat(fizzBuzz.fizzBuzz(17), equalTo("17"));
     }
 }
+
 
 
 
