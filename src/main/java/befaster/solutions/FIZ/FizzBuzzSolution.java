@@ -11,6 +11,12 @@ public class FizzBuzzSolution {
 
     	if ( (fizzBuzzSolution.isDivisible(number, 3) || fizzBuzzSolution.isContains(number, "3") )
     			&& (fizzBuzzSolution.isDivisible(number, 5) || fizzBuzzSolution.isContains(number, "5") )
+    			&& fizzBuzzSolution.isDelux(number) 
+    		) {
+    		return "fizz buzz deluxe";
+    	}
+    	else if ( (fizzBuzzSolution.isDivisible(number, 3) || fizzBuzzSolution.isContains(number, "3") )
+    			&& (fizzBuzzSolution.isDivisible(number, 5) || fizzBuzzSolution.isContains(number, "5") )
     		) {
     		return "fizz buzz";
     	}
@@ -63,4 +69,5 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
